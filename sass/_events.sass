@@ -1,0 +1,108 @@
+section.events, section.news
+    display: flex
+    justify-content: center
+    padding-top: 130px
+
+.event
+    &-block
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 100%
+        margin-bottom: 70px
+        padding-bottom: 15px
+        position: relative
+        .event-img
+            width: 32%
+        .event-content
+            width: 65%
+            position: relative
+            &::after
+                content: ''
+                background-image: url(../img/events/event-arrow.png)
+                position: absolute
+                width: 30px
+                height: 20px
+                background-size: cover
+                bottom: 0
+                right: 0
+            .event-info
+                display: flex
+                justify-content: space-between
+                margin-bottom: 7px
+            .event-title 
+                margin-bottom: 20px
+            .event-text
+                margin-bottom: 40px
+        &::before
+            content: ''
+            position: absolute
+            bottom: 0
+            left: 0
+            width: 100%
+            height: 1px
+            background-color: $grey
+        &_big
+            margin-bottom: 60px
+            padding-bottom: 30px
+            background-color: $light
+            position: relative
+            .event-img
+                width: 100%
+                max-height: 300px
+                margin-bottom: 30px
+                overflow: hidden
+                img
+                    width: 100%
+            .title
+                margin-left: 10%
+            &::after
+                content: ''
+                background-image: url(../img/events/event-arrow.png)
+                position: absolute
+                width: 30px
+                height: 20px
+                background-size: cover
+                bottom: 40px
+                right: 0
+            
+@media ( max-width: 960px )
+    section.events, section.news
+        padding-top: 70px
+    .event
+        &-block
+            flex-wrap: wrap
+            margin-bottom: 50px
+            .event-img
+                width: 100%
+                margin-bottom: 15px
+            .event-content
+                width: 100%
+                .event-title
+                    margin-bottom: 12px
+                .event-text
+                    margin-bottom: 15px
+                .event-tags
+                    width: 70%
+            &::before
+                display: none
+            &_big
+                margin-bottom: 60px
+                padding-bottom: 20px
+                background-color: $light
+                position: relative
+                .event-img
+                    height: 300px
+                    margin-bottom: 20px
+                    img
+                        width: auto
+                        height: 100%
+                .title
+                    margin-left: 15px
+                &::after
+                    width: 0
+                    height: 0
+
+                
+
+    

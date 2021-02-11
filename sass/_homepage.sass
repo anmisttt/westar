@@ -1,0 +1,402 @@
+.header-links
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    height: 164px
+    width: 20px
+    position: fixed
+    right: 10px
+    bottom: 50%
+    margin-top: -41px
+    z-index: 3
+    a
+        height: 20px
+        img
+            height: 100%
+header.homepage
+    display: flex
+    justify-content: center
+    margin-bottom: 100px
+    .container
+        position: relative
+        padding-right: 30px
+        height: 80vh
+        .header-img
+            width: 90%
+            height: 100%
+            overflow: hidden
+            img
+                width: 100%
+                height: auto
+        .header-content
+            display: block
+            transition: 1s
+            position: absolute
+            width: 92%
+            right: auto
+            left: 1%
+            bottom: 3%
+            display: flex
+            justify-content: space-between
+            align-items: center
+            .header-block     
+                background-color: #fff
+                box-shadow: -5px 10px 10px 0 rgba(0, 0, 0, 0.15);
+                max-width: 575px
+                padding: 50px 65px 40px 70px
+            .content-title
+                margin-bottom: 12px
+                margin-left: 0
+                line-height: normal
+                position: relative
+                &:before
+                    content: ''
+                    position: absolute
+                    left: -30px
+                    top: 10%
+                    display: block
+                    width: 4px
+                    height: 80%
+                    background-color: #000
+            .header-text
+                margin-bottom: 0
+            .content-link
+                background-color: #fff
+                width: 400px
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, .2)
+                .link-text
+                    padding-left: 50px
+            
+.category-name
+    display: block
+    position: absolute
+    top: 50%
+    left: -20px
+    transform: rotate(270deg)
+    font-family: Roboto
+    text-align: right
+    text-transform: uppercase
+    font-size: 14px
+    z-index: 3
+    &::after
+        content: ''
+        position: absolute
+        right: -120px
+        bottom: 50%
+        width: 100px
+        height: 1px
+        background-color: #000
+
+
+.homepage
+    .development
+        display: flex
+        justify-content: center
+        position: relative
+        &-name
+            left: -60px
+        .container
+            padding: 80px 0
+            position: relative
+            .development-container
+                width: 100%
+                display: flex
+                justify-content: center
+                align-items: center
+                margin-bottom: 70px
+                .development-content
+                    width: 45%
+                    margin-right: 5%
+                    img.content-img
+                        display: block
+                        width: 60%
+                        max-width: 300px
+                        margin-top: -100px
+                        margin-left: -60px
+                        margin-bottom: 50px
+                        transition: 0.5s
+                        &.acitve
+                            margin-left: -30px
+                    .development-card
+                        margin-left: 50px
+                        
+                .development-img
+                    width: 32%
+                    img
+                        width: 100%
+    .homepage-img
+        width: 100%
+        text-align: center
+        margin-bottom: 130px
+        img
+            width: 80%
+            max-width: 1300px
+    .products
+        display: flex
+        justify-content: center
+        background-color: $light
+        position: relative
+        margin-bottom: 100px
+        height: 530px
+        position: relative
+        .container
+            display: flex
+            position: relative
+            padding: 0 7%
+            .products-img
+                width: 50%
+                max-width: 830px
+                height: 610px
+                margin-top: -20px
+                margin-right: 8%
+                .border-block
+                    left: 12%
+                    z-index: -1
+                img
+                    width: 100%
+                    height: 100%
+            .products-content
+                padding: 80px 80px 60px 0
+                width: 33%
+                .content-title
+                    font-size: 48px
+                    margin-left: -30px
+                .content-text
+                    max-width: 450px
+
+
+                    
+    .about
+        display: flex
+        justify-content: center
+        position: relative
+        &-name
+            left: -30px
+        .container
+            padding: 280px 9% 150px;
+            position: relative;
+            .about-img
+                position: absolute
+                top: 0
+                right: 120px
+                width: 25%
+                max-width: 430px
+                transition: 0.5s
+            .about-video
+                width: 100%
+                margin-bottom: 72px
+                img
+                    width: 100%
+            .about-content
+                .about-container
+                    display: inline-block
+                    width: 70%
+                    max-width: 1090px
+                    float: right
+                    .content-text
+                        width: 100%
+                    .content-link
+                        float: right
+            .content-img
+                width: 35%
+                max-width: 400px
+                position: absolute
+                bottom: 130px
+                left: 0
+                transition: 0.5s
+                z-index: -1
+    .resources
+        display: flex
+        justify-content: center
+        background-color: $light
+        .container
+            padding: 100px 9% 85px
+            .resources-content
+                display: flex
+                justify-content: space-between
+                align-items: center
+                margin-bottom: 100px
+                .line-title
+                    padding: 5px 50px 5px 150px
+                    position: relative
+                    margin-bottom: 0
+                    &::before
+                        content: ''
+                        height: 100%
+                        width: 3px
+                        background-color: #000
+                        position: absolute
+                        top: 0
+                        left: 0
+                .text-block 
+                    width: 60%
+                    .content-text
+                        max-width: 480px
+                        margin-bottom: 0
+                
+            .resources-blocks
+                display: flex
+                justify-content: space-between
+                .resources-block
+                    width: 48%
+                    position: relative
+                    .border-block
+                        top: -9%
+                        left: 2.5%
+                        width: 100%
+                        height: 80%
+                        position: absolute
+                        border: 1px solid $tomato
+                    &:hover
+                        .resources-block__img
+                            img
+                                transform: scale(1.2)
+                    &__img
+                        width: 100%
+                        font-size: 0
+                        overflow: hidden
+                        img
+                            width: 100%
+                            transition: 0.5s
+    input[type='checkbox']
+    input[type='checkbox']:not(:checked)
+    id|='message'
+    a[href$=".zip"]
+    [data-action~='delete']
+    [data-action]:not([data-action~='delete'])
+    #messages li:nth-child(even)
+
+    .messages li:last-child a
+
+@media (max-width: 960px)
+    header.homepage
+        margin-bottom: 90px
+        .container
+            padding-right: 0
+            .header-img
+                width: 100%
+                height: 745px
+                overflow: hidden
+                img
+                    width: auto
+                    height: 100%
+            .header-content
+                display: block
+                width: auto
+                bottom: 0
+                left: 15px
+                right: 15px
+                .header-block
+                    width: auto
+                    max-width: 1000px
+                    padding: 40px 30px 10px 50px 
+                    margin-bottom: 20px    
+                .content-link
+                    width: 100%
+                    margin-bottom: 20px
+
+    .header-links
+        display: none
+                
+    .category-name
+        display: none
+    
+    .homepage
+        .development
+            padding-left: 15px
+            padding-right: 15px
+            .container
+                padding: 0
+                .development-container
+                    flex-direction: column
+                    .development-content
+                        width: 100%
+                        margin-right: 0
+                        .development-card
+                            margin-left: 0
+                            margin-bottom: 80px
+                        img.content-img
+                            display: none
+                    .development-img
+                        width: 100%
+                    
+        .homepage-img
+            margin-bottom: 60px
+            img
+                width: 100%
+        .products
+            height: auto
+            margin-bottom: 0
+            .container
+                flex-direction: column-reverse
+                padding: 80px 15px 80px
+                .products-content
+                    width: 100%
+                    padding: 0
+                    margin-bottom: 60px
+                .products-img
+                    width: 100%
+                    height: 430px
+                    margin: 0
+        .about
+            .container
+                padding: 60px 15px 50px;
+                .about-video
+                    height: 400px
+                    overflow: hidden
+                    img
+                        height: 100%
+                        width: auto
+                .about-img
+                    display: none
+                .about-content
+                    .about-container
+                        width: 100%
+                        margin-bottom: 30px
+                .content-img
+                    position: static
+                    width: 250px
+        .resources
+            .container
+                padding: 70px 15px 30px
+                .resources-content
+                    flex-direction: column
+                    margin-bottom: 90px
+                    .line-title
+                        padding-left: 36px
+                    .text-block
+                        width: 100%
+                .resources-blocks
+                    flex-wrap: wrap
+                    .resources-block
+                        width: 100%
+                        margin-bottom: 50px
+
+
+                            
+                    
+                    
+@media ( max-width: 1366px )
+    header.homepage
+        .container
+            .header-content
+                .header-block     
+                    padding: 20px 35px 10px 40px
+
+    // .homepage
+    //     .development
+    //         .container
+    //             .development-container
+    //                 .development-content
+    //                     img
+    //                         margin-left: -100px
+    //                     .development-card
+    //                         margin-left: 120px
+    //     .about
+    //         .container
+    //             padding: 330px 9% 150px;
+    //             .content-img
+    //                 left: 50px
+
+

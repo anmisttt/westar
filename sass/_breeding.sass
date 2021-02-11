@@ -1,0 +1,164 @@
+.breeding
+    .description
+        display: flex
+        justify-content: center
+        padding: 250px 0 100px
+        .container
+            padding: 0 9%
+            .description-container
+                width: 100%
+                display: flex
+                justify-content: center
+                align-items: center
+                margin-bottom: 70px
+                .description-content
+                    width: 45%
+                    max-width: 534px
+                    .content-title
+                        max-width: 564px
+                .content-img
+                    width: 50%
+                    max-width: 636px
+                    margin-top: -100px
+                    margin-right: 10%
+                    .border-block
+                        left: 35%
+                    img
+                        width: 100%
+    .innovation
+        padding: 100px 0 120px
+        background-color: $light
+        display: flex
+        justify-content: center
+        .container
+            padding: 0 9%
+            .line-title
+                margin-bottom: 100px
+            .innovation-row
+                display: flex
+                .innovation-block
+                    width: 30%
+                    max-width: 370px
+                    .block-img
+                        display: none
+                        
+                    .comments
+                        margin-bottom: 15px
+                    .text
+                        margin-bottom: 15px
+                    .arrow
+                        width: 100%
+                        height: auto
+                        img
+                            width: 100%
+                            height: 100%
+            .top-row
+                justify-content: flex-end
+                .innovation-block
+                    margin-left: 15%
+                    margin-bottom: 20px
+            .bottom-row
+                justify-content: flex-start
+                .innovation-block
+                    margin-right: 10%
+                    .arrow
+                        margin-bottom: 15px
+            .innovation-img
+                width: 100%
+                margin-bottom: 20px
+                img
+                    width: 100%
+    .breeding-img      
+        width: 100%
+        img
+            width: 100% 
+    .development
+        display: flex
+        justify-content: center
+        padding: 90px 0 100px
+        .container
+            padding: 0 9%
+            .line-title
+                margin-bottom: 70px
+            .development-content
+                display: flex
+                justify-content: space-between
+                margin-bottom: 70px
+                .development-block
+                    width: 30%
+                    .title
+                        margin-bottom: 25px
+                    .text
+                        padding-left: 8%
+            .development-img
+                width: 100%
+   
+@media ( max-width: 960px )
+    .breeding
+        .description
+            padding: 100px 0 30px
+            .container
+                padding: 0 15px
+                .description-container
+                    flex-direction: column-reverse
+                    .description-content
+                        width: 100%
+                        max-width: 534px
+                        margin-bottom: 80px
+                        .content-title
+                            max-width: 384px
+                    .content-img
+                        width: 100%
+                        margin-top: 0
+        .innovation
+            padding: 60px 0 10px
+            .container
+                padding: 0 15px
+                .line-title
+                    margin-bottom: 70px
+                .innovation-row
+                    display: flex
+                    flex-wrap: wrap
+                    .innovation-block
+                        width: 100%
+                        max-width: 100%
+                        margin-bottom: 50px
+                        .block-img
+                            display: block
+                            width: 100%
+                .top-row
+                    .innovation-block
+                        margin-left: 0
+                .bottom-row
+                    justify-content: flex-start
+                    .innovation-block
+                        margin-right: 0
+                        .arrow
+                            margin-bottom: 15px
+                .innovation-img
+                    display: none
+        .breeding-img      
+            width: 100%
+            height: 370px
+            overflow: hidden
+            img
+                width: auto
+                height: 100%
+        .development
+            padding: 80px 0 30px
+            .container
+                padding: 0 15px
+                .line-title
+                    margin-bottom: 60px
+                .development-content
+                    flex-wrap: wrap
+                    margin-bottom: 10px
+                    .development-block
+                        width: 100%
+                        margin-bottom: 32px
+                        .title
+                            margin-bottom: 16px
+                        .text
+                            padding-left: 0
+                .development-img
+                    display: none      

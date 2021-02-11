@@ -1,0 +1,115 @@
+section.contact
+    width: 80%
+    max-width: 1920px
+    margin-left: 1%
+    margin-top: 100px
+    padding: 70px 0 800px
+    display: flex
+    justify-content: space-between
+    background-color: $light
+    position: relative
+    .contact-container
+        position: absolute
+        top: 70px
+        right: -12%
+        display: flex
+        justify-content: space-between
+        width: 95%
+        .form-content
+            width: 42%
+            .content-title
+                margin-left: 0
+                margin-bottom: 60px
+            form
+                div
+                    display: inline-block
+                    margin-bottom: 10px
+                    height: 60px
+                    border: 1px solid #000
+                input
+                    width: 100%
+                    height: 100%
+                    padding: 22px 0 16px 20px
+                    background-color: $light
+                .first-name, .last-name
+                    width: 49%
+                .email, .phone, .country, .company, .position, .message
+                    width: 100%
+                .position
+                    display: flex
+                    align-items: center
+                    input
+                        height: auto
+                        margin-left: 5px
+                        width: 7%
+                    label
+                        margin-right: 20%
+                .dropdown
+                    position: relative
+                    &::after
+                        content: ''
+                        background-image: url(../img/contact/arrow.png)
+                        position: absolute
+                        width: 18px
+                        height: 10px
+                        background-size: cover
+                        top: 30px
+                        right: 20px                        
+                .message
+                    height: 90px
+                    input
+                        padding-bottom: 50px
+                button
+                    width: 100%
+                    text-align: center
+                    padding: 10px 0
+                    background-color: #000000
+                    color: #fff
+                    font-size: 24px
+                    cursor: pointer
+            
+        .contact-content
+            width: 45%
+            .title
+                margin-bottom: 16px
+            .text
+                margin-bottom: 60px
+            .contact-info
+                width: 105%
+                float: right
+                padding: 40px 0 80px 30px
+                margin-top: 10px
+                border: 1px solid $tomato
+                &-title
+                    margin-bottom: 5px
+                    font-weight: bold
+                &-text
+                    margin-bottom: 20px
+
+@media (max-width: 960px )
+    section.contact
+        width: 100%
+        margin-left: 0
+        margin-top: 300px
+        padding: 70px 15px 30px
+        .contact-container
+            position: static
+            flex-wrap: wrap
+            width: 100%
+            .form-content
+                width: 100%
+                margin-bottom: 70px
+                .content-title
+                    font-size: 48px
+                form 
+                    .first-name, .last-name
+                        width: 100%
+            .contact-content
+                width: 100%
+                &-top
+                    left: 15px
+                    right: 15px                    
+                    position: absolute
+                    top: -200px
+                .contact-info
+                    width: 100%

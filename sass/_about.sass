@@ -1,0 +1,219 @@
+.about
+    .description
+        display: flex
+        justify-content: center
+        position: relative
+        padding: 210px 0 270px
+        .container
+            padding: 0 9%
+            .description-container
+                width: 100%
+                display: flex
+                justify-content: center
+                flex-wrap: wrap
+                align-items: center
+                margin-bottom: 70px
+                .description-content
+                    width: 45%
+                    margin-right: 10%
+                    max-width: 534px
+                    .content-title
+                        max-width: 564px
+                    a
+                        float: right
+                .content-img
+                    width: 60%
+                    max-width: 500px
+                    margin-top: -100px
+                    margin-left: -30px
+                    .border-block
+                        left: 35%
+                    img
+                        width: 100%
+                        
+        .description-img
+            position: absolute
+            bottom: 30px
+            left: 0
+            width: 50%
+            max-width: 530px
+            img
+                width: 100%
+    .mission
+        padding: 130px 0 120px
+        background-color: $light
+        display: flex
+        justify-content: center
+        .line-title
+            margin-bottom: 70px
+            margin-left: 25%
+            padding-left: 100px
+        .mission-img
+            width: 100%
+            margin-bottom: 70px
+        .mission-content
+            width: 50%
+            max-width: 800px
+            margin-left: 35%
+            .black-link
+                width: 414px
+                float: right
+    .goal
+        padding: 280px 0 150px
+        display: flex
+        justify-content: center
+        position: relative
+        .goal-img
+            position: absolute
+            top: 30px
+            left: 0
+            width: 50%
+            max-width: 530px
+            img
+                width: 100%
+        .container
+            padding: 0 9%
+            .goal-container
+                width: 100%
+                display: flex
+                justify-content: center
+                align-items: center
+                flex-wrap: wrap
+                margin-bottom: 70px
+                .goal-content
+                    width: 45%
+                    margin-right: 10%
+                    max-width: 534px
+                    .content-title
+                        max-width: 564px
+                    a
+                        float: right
+                .content-img
+                    width: 60%
+                    max-width: 500px
+                    margin-top: -100px
+                    .border-block
+                        bottom: 17%
+                        left: -5%
+                        width: 110%
+                        height: 70%
+                        z-index: -1
+                    img
+                        width: 100%
+    .events
+        padding: 120px 0 100px
+        display: flex
+        justify-content: center
+        background-color: $light
+        .container
+            padding: 0 9%
+            .line-title
+                margin-bottom: 60px
+            
+            .link-content
+                width: 65%
+                float: right
+                a .event-link
+                    width: 414px
+                
+@media ( max-width: 960px)
+    .about
+        .description
+            padding: 80px 0 150px
+            .container
+                padding: 0 15px
+                .description-container
+                    margin-bottom: 70px
+                    .description-content
+                        width: 100%
+                        margin-right: 0
+                        margin-bottom: 90px
+                        max-width: 100%
+                        .content-title
+                            max-width: 100%
+                        .content-text
+                            margin-bottom: 70px
+                        a
+                            float: none
+                    .content-img
+                        width: 100%
+                        max-width: 500px
+                        margin-top: 0
+                        margin-left: -30px
+                        &::before
+                            left: 35%
+                        img
+                            width: 100%
+            .description-img
+                position: absolute
+                bottom: 30px
+                left: 0
+                max-width: 290px
+                width: 70%
+                z-index: -1
+        .mission
+            padding: 50px 0 90px
+            .line-title
+                margin-left: 15px
+                padding-left: 30px
+            .mission-img
+                height: 370px
+            .mission-content
+                width: auto
+                margin-left: 15px
+                margin-right: 15px
+                .content-text
+                    margin-bottom: 70px
+                .black-link
+                    width: auto
+                    float: none
+        .goal
+            padding: 170px 0 65px
+            .goal-img
+                top: 0px
+                left: auto
+                right: 0
+                width: 80%
+                max-width: 350px
+                img
+                    width: 100%
+            .container
+                padding: 0 15px
+                .goal-container
+                    width: 100%
+                    margin-bottom: 0
+                    .goal-content
+                        width: 100%
+                        margin-right: 0
+                        margin-bottom: 70px
+                        max-width: 100%
+                        .content-title
+                            max-width: 100%
+                        a
+                            float: none
+                    .content-img
+                        width: 90%
+                        max-width: 500px
+                        margin-top: 0
+                        &::before
+                            bottom: 17%
+                            left: -5%
+                            width: 110%
+                            height: 70%
+                            z-index: -1
+                        img
+                            width: 100%
+        .events
+            padding: 90px 0 70px
+            .container
+                padding: 0 15px
+                .line-title
+                    margin-bottom: 70px
+                .link-content
+                    width: 100%
+                    float: none
+                    a .event-link
+                        width: 100%
+                        &::after
+                            content: ''
+

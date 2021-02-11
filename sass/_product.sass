@@ -1,0 +1,214 @@
+.product-card
+    display: flex
+    justify-content: center
+    background-color: $pink
+    .container
+        padding: 80px 9% 90px
+        display: flex
+        justify-content: space-between
+        position: relative
+        .breads
+            position: absolute
+            top: 20px
+            right: 9%
+            font-size: 11px
+        .product-slider
+            width: 40%
+            &-img
+                width: 100%
+                overflow: hidden
+                position: relative
+                font-size: 0
+                img
+                    width: 100%
+                    height: auto
+            &-bottom
+                position: absolute
+                bottom: 0
+                width: 100%
+                padding: 8px 5px 6px
+                background-color: rgba(0, 0, 0, 0.5)
+                text-transform: uppercase
+                color: #ffffff
+                font-size: 11px
+                font-family: Roboto-Light
+                text-align: right
+        .product-content
+            width: 50%
+            .title
+                margin-bottom: 30px
+            .info-block
+                width: 100%
+                position: relative
+                margin-bottom: 16px
+                &::before
+                    content: ''
+                    width: 100%
+                    height: 1px
+                    background-color: $grey
+                    position: absolute
+                    bottom: 0
+                .product-title
+                    padding-right: 30px
+                    padding-bottom: 15px
+                    position: relative
+                    display: inline-block
+                    &::before
+                        content: ''
+                        width: 100%
+                        height: 3px
+                        background-color: $brown
+                        position: absolute
+                        bottom: 0
+            .product-title
+                text-transform: uppercase
+                font-weight: bold
+            .info-table
+                display: flex
+                margin-bottom: 36px
+                .block
+                    padding: 0 15px
+                    position: relative
+                    &::before
+                        content: ''
+                        height: 100%
+                        width: 1px
+                        background-color: $grey
+                        position: absolute
+                        right: 0
+                    &:first-child
+                        padding-left: 0
+                    &:last-child
+                        &::before
+                            height: 0
+                            width: 0
+            .description
+                margin-bottom: 40px
+            .download
+                display: flex
+                align-items: center
+                justify-content: space-between
+                width: 400px
+                padding-bottom: 5px
+                .product-title
+                    &::before
+                        height: 0px
+                        width: 0px
+                .pdf-file
+                    width: 200px
+                    img
+                        width: 27px
+            .share-block
+                display: flex
+                align-items: center
+                justify-content: space-between
+                width: 400px
+                .product-links
+                    display: flex
+                    justify-content: space-between
+                    width: 200px
+                    a img
+                        width: 30px
+.product-bottom
+    height: 80px
+    background-color: $pink
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    .quality-title
+        width: 125px
+        text-transform: uppercase
+        color: $tomato
+        position: relative
+    .quality-text
+        width: 50%
+        font-size: 11px;
+        color: $brown
+    .quality-line
+        width: 15%
+        height: 1px
+        background-color: $tomato
+        &-middle
+            width: 5%
+
+
+@media (max-width: 960px )
+    .product-card
+        .container
+            padding: 150px 15px 70px
+            flex-wrap: wrap
+            .breads
+                position: absolute
+                top: 20px
+                right: 9%
+                font-size: 11px
+            .product-slider
+                width: 100%
+                margin-bottom: 40px
+            .product-content
+                width: 100%
+                &-top
+                    position: absolute
+                    top: 60px
+                .info-table
+                    flex-direction: column
+                    margin-bottom: 20px
+                    .block
+                        padding: 16px 0
+                        &::before
+                            height: 1px
+                            width: 100%
+                            bottom: 0
+                        &:first-child
+                            padding-top: 0
+                .product-title
+                    font-size: 16px
+                .download
+                    flex-direction: column
+                    align-items: flex-start
+                    width: 100%
+                    padding-bottom: 5px
+                    margin-bottom: 40px
+                    .product-title
+                        margin-bottom: 10px
+                    .pdf-file
+                        width: 50px
+                        margin-bottom: 20px
+                        img
+                            width: 100%
+                .share-block
+                    flex-direction: column
+                    align-items: flex-start
+                    width: 100%
+                    .product-title
+                        margin-bottom: 30px
+                        font-size: 16px
+                    .product-links
+                        width: 100%
+                        a 
+                            width: 14%
+                            img
+                                width: 100%
+                                height: auto
+    .product-bottom
+        height: auto
+        padding: 30px 0
+        .quality-title
+            width: 125px
+            text-transform: uppercase
+            color: $tomato
+            position: relative
+        .quality-text
+            width: 100%
+            margin: 30px 15px
+        .quality-line
+            &-left
+                width: 45%
+            &-middle
+                width: 15%
+            &-right
+                width: 100%
+                        
+
+

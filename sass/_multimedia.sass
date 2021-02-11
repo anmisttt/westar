@@ -1,0 +1,37 @@
+section.multimedia 
+    display: flex
+    justify-content: center
+
+.multimedia
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-bottom: 70px
+    .multimedia-block
+        width: 49%
+        margin-bottom: 20px
+        .video-block
+            position: relative
+            .video
+                width: 100%
+                margin-bottom: 20px
+            .play
+                width: 100px
+                position: absolute
+                top: 50%
+                left: 50%
+                margin-top: -50px
+                margin-left: -50px
+        .title
+            margin-left: 20px
+
+@media (max-width: 960px )
+    section.multimedia 
+        margin-bottom: 10px
+    .multimedia
+        margin-bottom: 30px
+        .multimedia-block
+            width: 100%
+            margin-bottom: 30px
+
+        
